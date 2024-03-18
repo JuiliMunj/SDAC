@@ -1,22 +1,19 @@
 class Emp {
-	String name = "ABC";
-	int id = 1;
-	double salary = 10200;
-	String address = "xyz";
+    String name = "ABC";
+    int id = 1;
+    double salary = 10200;
+    String address = "xyz";
 
-	void displayInfo() {
-		System.out.println(name);
-		System.out.println(id);
-		System.out.println(salary);
-		System.out.println(address);
-	}
+    @Override
+    public String toString() {
+        return "Name: " + name + "\nID: " + id + "\nSalary: " + salary + "\nAddress: " + address;
+    }
 }
+
 public class Q1 {
-public static void main(String[] args) {
-	System.out.println("helloworld");
-	Emp e = new Emp();
-	e.displayInfo();
-   }
+    public static void main(String[] args) {
+        System.out.println("Hello World");
+        Emp e = new Emp();
+        System.out.println(e.toString());
+    }
 }
-
-
